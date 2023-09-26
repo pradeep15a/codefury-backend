@@ -22,7 +22,7 @@ app.get('/', (req,res) => {
     res.send("Hello, world!, APP is running");
 })
 
-const CONNECTION_URL = 'mongodb+srv://targaryen:codefury123@cluster0.qxsbtrb.mongodb.net/?retryWrites=true&w=majority'
+const CONNECTION_URL = 'mongodb+srv://pradeep:1234@cluster0.qxsbtrb.mongodb.net/?retryWrites=true&w=majority'
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true})
     .then(() => app.listen(PORT, () => console.log(`Server running on port ${PORT}`)))
     .catch((error) => console.log(error.message) );
